@@ -17,7 +17,7 @@ export default function Layout() {
                 variant={isActive('/') ? 'default' : 'ghost'}
                 asChild
               >
-                <Link to="/">Dashboard</Link>
+                <Link to="/">Tickets</Link>
               </Button>
               <Button
                 variant={isActive('/ticket-mappings') ? 'default' : 'ghost'}
@@ -30,12 +30,6 @@ export default function Layout() {
                 asChild
               >
                 <Link to="/device-logs">Device Logs</Link>
-              </Button>
-              <Button
-                variant={isActive('/tickets') ? 'default' : 'ghost'}
-                asChild
-              >
-                <Link to="/tickets">Tickets</Link>
               </Button>
               <Button
                 variant={isActive('/esim-profiles') ? 'default' : 'ghost'}
