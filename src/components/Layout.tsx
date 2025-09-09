@@ -1,5 +1,6 @@
 import { Outlet, Link, useLocation } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
+import logo from '@/assets/logo.jpeg'
 
 export default function Layout() {
   const location = useLocation()
@@ -11,7 +12,9 @@ export default function Layout() {
       <nav className="border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold">Ticket Agent</h1>
+            <Link to="/" className="flex items-center">
+              <img src={logo} alt="PlyxAI" className="h-10" />
+            </Link>
             <div className="flex space-x-2">
               <Button
                 variant={isActive('/') ? 'default' : 'ghost'}
